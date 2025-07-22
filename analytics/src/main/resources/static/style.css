@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+        background-color: rgba(255, 255, 255, 0.9);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color: #333;
+        margin: 0;
+        padding: 0;
+}
+
+h1 {
+    margin-top: 30px;
+    color: #2c3e50;
+    text-align: center;
+    font-size: 32px;
+    text-shadow: 1px 1px #ccc;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px auto;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu button {
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.menu button:hover {
+    background-color: #2980b9;
+}
+
+section {
+    margin: 20px auto;
+    display: none;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: #000;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+canvas.chart-canvas {
+    max-width: 700px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+

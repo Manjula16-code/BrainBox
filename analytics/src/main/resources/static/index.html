@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BrainBox Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>BrainBox Analytics Dashboard</h1>
+
+<div class="menu">
+    <div class="menu-item">
+        <button onclick="toggleSection('articleCounts')">📄 Article Action Counts</button>
+        <button onclick="toggleChart('articleChart', articleChart, generateArticleChart)">📊</button>
+    </div>
+    <div class="menu-item">
+        <button onclick="toggleSection('searchStats')">🔍 Popular searches</button>
+        <button onclick="toggleChart('searchChart', searchChart, generateSearchChart)">📊</button>
+    </div>
+    <div class="menu-item">
+        <button onclick="toggleSection('contributorStats')">👤 Contributor Stats</button>
+        <button onclick="toggleChart('contributorChart', contributorChart, generateContributorChart)">📊</button>
+    </div>
+</div>
+
+<section id="articleCounts" class="data-section"></section>
+<canvas id="articleChart" class="chart-canvas" style="display:none;"></canvas>
+
+<section id="searchStats" class="data-section"></section>
+<canvas id="searchChart" class="chart-canvas" style="display:none;"></canvas>
+
+<section id="contributorStats" class="data-section"></section>
+<canvas id="contributorChart" class="chart-canvas" style="display:none;"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
