@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>BrainBox Analytics</title>
@@ -16,7 +16,7 @@
         <button onclick="toggleChart('articleChart', articleChart, generateArticleChart)">📊</button>
     </div>
     <div class="menu-item">
-        <button onclick="toggleSection('searchStats')">🔍 Popular searches</button>
+        <button onclick="toggleSection('searchStats')">🔍 Popular Searches</button>
         <button onclick="toggleChart('searchChart', searchChart, generateSearchChart)">📊</button>
     </div>
     <div class="menu-item">
@@ -34,6 +34,6 @@
 <section id="contributorStats" class="data-section"></section>
 <canvas id="contributorChart" class="chart-canvas" style="display:none;"></canvas>
 
-<script src="script.js"></script>
+<script src="script.js" ></script>
 </body>
 </html>

@@ -1,13 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
-        background-color: rgba(255, 255, 255, 0.9);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        color: #333;
-        margin: 0;
-        padding: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -45,7 +45,7 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .menu button:hover {
@@ -59,7 +59,25 @@ section {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fixes chart gap */
+canvas.chart-canvas {
+    max-width: 700px;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+canvas.chart-canvas[style*="display: none"] {
+    margin: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+}
+
+/* Removes space above table */
+section table {
+    margin-top: 0;
 }
 
 table {
@@ -74,12 +92,3 @@ th, td {
     padding: 10px;
     text-align: center;
 }
-
-canvas.chart-canvas {
-    max-width: 700px;
-    margin: 20px auto;
-    display: block;
-}
-
-
-
